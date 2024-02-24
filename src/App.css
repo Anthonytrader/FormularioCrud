@@ -1,0 +1,34 @@
+label {
+  display: block;
+}
+
+label,
+input,
+button {
+  font-size: 1.3rem;
+}
+
+
+.title_btn{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: yellow;
+  
+}
+
+.container_card_user {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Divide el contenedor en tres columnas */
+  gap: 1rem; /* Agrega espacio entre las tarjetas */
+}
+
+
+
+/* Media query para dispositivos con un ancho de pantalla de 768px o menos */
+@media screen and (max-width: 768px) {
+  .container_card_user {
+    grid-template-columns: 1fr; /* Cambia a una sola columna */
+  }
+}
